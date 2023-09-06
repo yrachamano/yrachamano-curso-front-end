@@ -1,71 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orkut</title>
-    <link rel="stylesheet" href="orkut.css">
-    
-
-
+  <link rel="stylesheet" href="./orkut.css">
 </head>
-
-
 <body>
-    <div>
-        <div class="container-principal">
-            <div class="frases-logo">
-                  <h1>orkut</h1>  
-                <section>
-                    <p class="frase"><span class="palavra-rosa">Conecta-se</span> aos seus amigos e familiares usando
-                        recados e mensagens instantâneas.
-                    </p>
-                    <p class="frase"><span class="palavra-rosa">Conheça</span> novas pessoas através de amigos de seus
-                        amigos e comunidades.
-                    </p>
-                    <p class="frase"><span class="palavra-rosa">Compartilhe</span> seus videos, fotos e paixões em um só
-                        lugar.
-                    </p>
-                </section>
-            </div>
-
-            <section class="c-form">
-                <div class="c-login">
-                  <div class="email">
-                    <span class="hidden-mobile">Email:</span>
-                    <input type="text" placeholder="Digite seu e-mail" autofocus>
-                  </div>
-                  <div class="senha">
-                    <span class="hidden-mobile">Senha:</span>
-                    <input type="text" placeholder="Digite sua senha">
-                  </div>
-                  
-                  <div class="salvar-info">
-                    <span>Continuar logado</span>
-                    <input type="checkbox">
-                  </div>
-                  <button class="btn">Login</button>
-                  
-                  <a href="#" class="link-acessar">Não consegue acessar sua conta?</a>
-                </div>
-                
-                 <div class="c-register">
-                   <span>Ainda não é membro?</span>
-                   <a href="#" class="link-registrar">ENTRAR JÁ</a>
-                 </div>
-                
-            </section>
+    <div class="primeira">
+       
+    </div>
+    <div id="container">
+        <div id="um">
+            <img src="../../imagem/orkut.png" alt="Orkut logo" width="400" height="200">
+            <p><b><span>Conecta-se</span></b> aos seus amigos e familiares usando recados e mensagens instantâneas</p>
+            <p><b><span>Conheça</span></b> novas pesssoas através de amigos de seus amigos e comunidades</p>
+            <p><b><span>Compartilhe</span></b> seus vídeos, fotos e paixões em um só lugar</p>
         </div>
-    
-        <footer>
-            <div class="links">
-                <span>&copy; 2004 orkut.com </span>
-                <a href="#">Sobre orkut.com</a> <span class="hidden-mobile">-</span>
-                <a href="#">Centro de Segurança</a> <span class="hidden-mobile">-</span>
-                <a href="#">Privacidade</a> <span class="hidden-mobile">-</span>
-                <a href="#">Termos</a> <span class="hidden-mobile">-</span>
-                <a href="#">Contato</a>  
-            </div>
-            
+    <div>
+        <div id="dois">
+            <form action="#" method="post" id="formulario">
+                <p style="text-align: center;">Acesse o <b>Orkut.br</b> com a sua conta</p>
+                
+                <div class="email">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="iemail" name="email">
+                </div>
+                <div class="senha">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="isenha" name="senha">
+                </div>
+               <div class="container2">
+                <div class="checkbox">
+                    <input type="checkbox" id="icheckbox" name="checkbox">
+                </div>
+                <div id="label">
+                <label>Salvar as minhas informações neste computador</label> 
+                </div>
+                </div>
+                <div class="p">
+                    <p>Não use em computadores públicos.
+                        [?]</p>
+                </div>
+
+               <div class="btn">
+                <input type="submit" value="Login" id="login">
+               </div>
+               <a href="#">Não consegui acessar sua conta?</a>
+            </form>
+        </div>
+        <div id="tres">
+            <p>Ainda não é membro?</p>
+            <a href="#"><b>ENTRAR JÁ</b></a>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div id="ultima">
+          <p>&copy; 2017 Orkut.br -</p>
+          <a href="#">Sobre o Orkut.br - </a> 
+          <a href="#">Centro de segurança - </a>          
+          <a href="#">Privacidade - </a>         
+          <a href="#">Termos - </a>        
+          <a href="#">Contato - </a>       
+          
+      </div>
 </body>
 </html>
