@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOWMP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+
+    
+    <aside>
+        <img src="../../imagem/MoPlogo.png" alt="World of warcraft mists of pandaria" width="200px">
+        <div id="version">
+            <span>Version 5.0.1 (15726) (beta x64)</span>
+            <span>may 21 2012</span>
+        </div>
+    </aside>
+    <main>
+        <form action="" method="post">
+            <div>
+                <label for="login">Battle.net Account Name</label>
+                <input type="email" name="login" id="login" placeholder="Enter your Email adress" autocomplete="off">
+            </div>
+            <div>
+                <label for="senha">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div id="finalform">
+                <input type="submit" value="Login" id="loginButton">
+                <div>
+                    <input type="checkbox" name="lembrar" id="lembrar" >
+                    <label for="lembrar">Remember account name</label>
+                </div>
+            </div>
+        </form>
+        <footer>
+            <img src="../../imagem/blizzard.png" alt="blizzard logo" width="100px">
+            <span>Copyright 2004-2012 Blizzard Entertainment. All Rights Reserved.</span>
+        </footer>
+    </main>
+    <aside id="last">
+        <button id="options" onclick="options()">opções</button>
+    </aside>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
