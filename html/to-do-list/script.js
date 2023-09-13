@@ -7,15 +7,13 @@ let btnTarefas = document.querySelector('.tarefas')
 novaTarefa.addEventListener('keyup', (tecla)=>{
     
     if (tecla.key == 'Enter'){
-        renderizarTarefa()
-        atualizarListaTarefas()
+        
     }
 })
 
 btnCriarTarefa.addEventListener('click', ()=>{
     
-    renderizarTarefa()    
-    atualizarListaTarefas()
+    
     
 })
 
