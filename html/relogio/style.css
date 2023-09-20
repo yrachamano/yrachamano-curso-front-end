@@ -17,7 +17,7 @@
 
 body{
     height: 100vh;
-    background-image: var(--manha);
+    /* background-image: var(--manha); */
     display: flex;
     align-items: center;
     justify-content: center;
