@@ -143,7 +143,6 @@ Retorna um novo objeto Promise que é resolvido com o valor fornecido. Se o valo
 Geralmente, se você não sabe se um valor é uma promise ou não, Promise.resolve(value) e trabalhe com o valor de retorno como uma promise.
 
 ### Métodos de instância
-Consulte o Guia do Microtask (en-US) para saber mais sobre como esses métodos usam a fila e os serviços do Microtask.
 
 Promise.prototype.catch()
 Anexa um retorno de chamada do manipulador de rejeição à promise e retorna uma nova promise resolvendo o valor de retorno do retorno de chamada se for chamado ou seu valor de cumprimento original se a promise for cumprida.
