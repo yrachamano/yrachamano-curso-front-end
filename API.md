@@ -13,6 +13,20 @@ Com as APIs, sua solução ou serviço podem se comunicar com outros produtos e 
 
 As APIs funcionam como se fossem contratos, com documentações que representam um acordo entre as partes interessadas. Se uma dessas partes enviar uma solicitação remota estruturada de uma forma específica, isso determinará como a aplicação da outra parte responderá.
 
+### Como as APIs funcionam na prática? 
+Basicamente, as APIs funcionam como um tipo de ponte que permite a comunicação entre diferentes sistemas. Na prática, uma das partes solicita as informações que deseja receber e a interface realiza esse processamento, solicitando os dados de acordo com as regras e funcionalidades que ela disponibiliza.
+
+Após esse processamento, a API retorna com as informações solicitadas pelo contador, por exemplo. Geralmente, essa resposta é enviada em formato estruturado para facilitar a leitura no software. 
+
+Entre os principais exemplos de como as APIs funcionam podemos citar: 
+
+Redes sociais: as APIs de redes sociais permitem que os desenvolvedores criem aplicativos que interajam com outras plataformas. Por exemplo, um aplicativo pode utilizar a API do Facebook para fazer login, postar mensagens ou obter informações do perfil de um usuário.
+
+Pagamento online: neste caso, as APIs permitem que lojas virtuais aceitem pagamentos em seus sites ou aplicativos. Assim, é possível realizar transações financeiras de forma segura e eficiente, totalmente online.
+
+Serviços de localização: APIs como a do Google Maps, por exemplo, possibilitam que os desenvolvedores incorporem mapas e informações de localização em seus aplicativos. Permitindo a criação de mapas, a busca de endereços e de rotas.
+Vale destacar que as partes podem utilizar os dados obtidos pela API conforme suas necessidades. Isso vale tanto para a exibição dos dados em uma interface gráfica, processamento dos dados para realizar alguma ação específica ou até mesmo o envio de novas requisições para a interface.
+
 ---
 
 
