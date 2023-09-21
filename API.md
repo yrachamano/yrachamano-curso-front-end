@@ -106,3 +106,50 @@ Um objeto de configurações é um ambiente que fornece informações adicionais
 Para melhor visualizar isso, podemos dar uma olhada mais de perto em como o reino pode ser um problema. Um reino pode ser pensado aproximadamente como o objeto global. O que é único sobre os realms é que eles contêm todas as informações necessárias para executar o código JavaScript. Isso inclui objetos como Array e Error. Cada objeto de configurações tem sua própria "cópia" e não são compartilhados. Isso pode causar algum comportamento inesperado em relação às promises. Para contornar isso, rastreamos algo chamado objeto de configurações incumbentes. Isso representa informações específicas do contexto do código do usuário responsável por uma determinada chamada de função.
 
 Para ilustrar isso um pouco mais, podemos dar uma olhada em como um < iframe > embutido em um documento se comunica com seu host. Como todas as APIs da Web estão cientes do objeto de configurações incumbente, o seguinte funcionará em todos os navegadores:
+
+### Construtor
+Promise()
+Cria um novo objeto Promise. O construtor é usado principalmente para encapsular funções que ainda não suportam promises.
+
+### Métodos estáticos
+Promise.all(iterable)
+Aguarde que todas as promises sejam cumpridas ou que alguma seja rejeitada.
+
+Se a promise retornada for cumprida, ela será cumprida com uma matriz de agregação dos valores das promises cumpridas, na mesma ordem definida no iterável de várias promises.
+
+Se for rejeitado, será rejeitado com o motivo da primeira promise no iterável que foi rejeitada.
+
+Promise.allSettled(iterable)
+Aguarde até que todas as promises sejam resolvidas (cada uma pode cumprir ou rejeitar).
+
+Retorna uma Promise que cumpre depois que todas as promises fornecidas são cumpridas ou rejeitadas, com uma matriz de objetos que descrevem o resultado de cada promise.
+
+Promise.any(iterable) (en-US)
+Pega um iterável de objetos Promise e, assim que uma das promises do iterável é cumprida, retorna uma única promise que cumpre com o valor dessa promise.
+
+Promise.race(iterable)
+Aguarde até que alguma das promises seja cumprida ou rejeitada.
+
+Se a promise retornada for cumprida, ela será cumprida com o valor da primeira promise no iterável que foi cumprida.
+
+Se for rejeitado, será rejeitado com o motivo da primeira promise que foi rejeitada.
+
+Promise.reject(reason)
+Retorna um novo objeto Promise que é rejeitado com o motivo fornecido.
+
+Promise.resolve(value)
+Retorna um novo objeto Promise que é resolvido com o valor fornecido. Se o valor for um thenable (ou seja, tem um método then), a promise retornada "seguirá" esse thenable, adotando seu estado eventual; caso contrário, a promise devolvida será cumprida com o valor.
+
+Geralmente, se você não sabe se um valor é uma promise ou não, Promise.resolve(value) e trabalhe com o valor de retorno como uma promise.
+
+### Métodos de instância
+Consulte o Guia do Microtask (en-US) para saber mais sobre como esses métodos usam a fila e os serviços do Microtask.
+
+Promise.prototype.catch()
+Anexa um retorno de chamada do manipulador de rejeição à promise e retorna uma nova promise resolvendo o valor de retorno do retorno de chamada se for chamado ou seu valor de cumprimento original se a promise for cumprida.
+
+Promise.prototype.then()
+Anexa manipuladores de cumprimento e rejeição à promise e retorna uma nova promise resolvendo o valor de retorno do manipulador chamado ou seu valor estabelecido original se a promise não foi tratada (ou seja, se o manipulador relevante onFulfilled ou onRejected não é uma função).
+
+Promise.prototype.finally()
+Anexa um manipulador à promise e retorna uma nova promise que é resolvida quando a promise original é resolvida. O manipulador é chamado quando a promise é liquidada, seja cumprida ou rejeitada.
