@@ -99,3 +99,10 @@ O método .then() aceita até dois argumentos; o primeiro argumento é uma funç
 O ecossistema JavaScript fez várias implementações do Promise muito antes de se tornar parte da linguagem. Apesar de serem representados de forma diferente internamente, no mínimo, todos os objetos do tipo Promise implementam a interface Thenable. Um thenable implementa o método .then(), que é chamado com dois retornos de chamada: um para quando a promise é cumprida, um para quando for rejeitado. Promises também são possíveis.
 
 Para interoperar com as implementações de Promise existentes, a linguagem permite o uso de thenables no lugar de promises. Por exemplo, Promise.resolve não apenas resolverá as promises, mas também rastreará os entãoables
+
+### Rastreamento de objetos de configurações incumbentes
+Um objeto de configurações é um ambiente que fornece informações adicionais quando o código JavaScript está em execução. Isso inclui o mapa do domínio e do módulo, bem como informações específicas do HTML, como a origem. O objeto de configurações incumbente é rastreado para garantir que o navegador saibas qual usar para um determinado pedaço de código de usuário.
+
+Para melhor visualizar isso, podemos dar uma olhada mais de perto em como o reino pode ser um problema. Um reino pode ser pensado aproximadamente como o objeto global. O que é único sobre os realms é que eles contêm todas as informações necessárias para executar o código JavaScript. Isso inclui objetos como Array e Error. Cada objeto de configurações tem sua própria "cópia" e não são compartilhados. Isso pode causar algum comportamento inesperado em relação às promises. Para contornar isso, rastreamos algo chamado objeto de configurações incumbentes. Isso representa informações específicas do contexto do código do usuário responsável por uma determinada chamada de função.
+
+Para ilustrar isso um pouco mais, podemos dar uma olhada em como um < iframe > embutido em um documento se comunica com seu host. Como todas as APIs da Web estão cientes do objeto de configurações incumbente, o seguinte funcionará em todos os navegadores:
