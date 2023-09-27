@@ -7,11 +7,14 @@ enviar.addEventListener('click',(evento)=>{
     const senha = document.querySelector("#senha").valure
 
     fetch('https://api.sheetmonkey.io/form/kDAtwkbtrC6C5oQcremCsj',{
-        method: 'post',
-        headers:{
-            'Accept': 'application/json',
-            'content-type': 'application/json',
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
         },
-        body: JSON.stringify({login , senha })
+        body: JSON.stringify({
+            email: login,
+            senha
+        })
     })
 })
