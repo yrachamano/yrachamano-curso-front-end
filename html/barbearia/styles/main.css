@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  --darkGrey: #161616;
+  --lightGrey: #CCC;
+  color: var(--darkGrey);
+  scroll-behavior: smooth;
+}
+main{
+  max-width: 940px;
+  margin: auto;
+}
+body{
+  background-color: var(--lightGrey);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  background-color: var(--darkGrey);
+  justify-content: space-around;
+  display: flex;
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+#logo {
+  height: 125%;
+  position: relative;
+  top: 5px;
+}
+
+nav {
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--lightGrey);
+  font-weight: 500;
+  margin: 15px;
+  transition: 300ms;
+}nav a:hover {
+  font-weight: 800;
+} nav a:not(:hover){
+  opacity: 0.5;
+} 
+.banner {
+  width: 100%;
+  max-width: 900px;
+  max-height: 400px;
+  object-fit: cover;
+  margin: auto;
+}
+.utensilios{
+  width: 250px;
+  margin: 0 30px 15px 5%;
+  border-radius: 5px;
+  float: left;
+}
+#about {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+.title {
+  font-weight: 800;
+  margin: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  clear: both;
+}
+#about > p {
+  margin: 20px auto;
+  text-align: left;
+}
+#benefits {
+  margin: auto;
+  padding: 25px 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  align-items: center;
+}
+#benefits img {
+  width: 350px;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5) );
+}
+#benefits .list {
+  justify-items: center;
+  margin: 15px;
+  width: 250px;
+  font-weight: 600;
+}
+#vidContainer{
+  padding-bottom: 56.25%;
+  position: relative;
+  margin: 30px;
+}
+#vidContainer iframe{
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
+}
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  height: 100px;
+  background-color: var(--darkGrey);
+}
+footer img{
+  height: 100%;
+}
+footer p, footer a{
+  color: var(--lightGrey);
+}
+footer p{
+  min-width: 300px;
+  font-size: 0.85em;
+}
+
+@media (max-width: 500px)  {
+  .utensilios{
+    display: none;
+  }
+}

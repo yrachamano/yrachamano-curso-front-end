@@ -1,0 +1,84 @@
+@import url(main.css);
+form{
+    margin: 50px auto;
+    width: 90%;
+}
+#login{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#login > input{
+    margin: 10px auto;
+}
+#infos input:not(#mensagem){
+    height: 2rem;
+}
+form label, legend{
+    font-size: 1rem;
+    margin: 15px auto;
+}
+form input, form textarea{
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    padding: 5px 10px;
+}
+label{
+    font-weight: 600;
+}
+#contactOption{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 45px auto;
+}#contactOption label{
+    margin: 5px auto;
+}#contactOption input{
+    width: 2em;
+}
+
+#horaAtendimento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px auto;
+    border: none;
+}#horaAtendimento select{
+    margin: 5px;
+    width: 200px;   height: 2em;
+    border: none;
+    border-radius: 5px;
+}
+.checkbox{
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: 500;
+    display: block;
+    margin: 30px auto;
+}
+#checkbox{
+    width: 2em;
+    height: 1.2em;
+    border: none;
+}
+.sendButton{
+    height: 2rem;
+    width: 150px;
+    transition: 200ms;
+    display: block;
+    margin: 30px auto;
+}.sendButton:hover{
+    background-color: darkgoldenrod;
+    font-weight: 700;
+}
+#horario{
+    margin: 30px auto;
+}#horario th{
+    background-color: var(--darkGrey) ;
+    color: var(--lightGrey);
+    width: 30vw;
+}
