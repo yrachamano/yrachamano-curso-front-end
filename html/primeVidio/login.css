@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: black;
+    font-weight: 400;
+}
+
+#email1{
+    color: black;
+    position: relative;
+    right: 18px
+}
+
+#senha1{
+    color: black;
+    position: relative;
+    right: 100px
+    
+}
+#logo{
+    position: relative;
+    top: 10px
+}
+
+body{;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;   
+
+}
+  
+main{
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 22px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    padding: 32px 52px;
+    justify-content: space-between;
+    max-width: 250px;
+    flex-direction: column;
+    border: 1px solid rgba(181, 174, 174, 0.71);
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    align-items: center;
+}
+
+
+.login{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(81, 79, 79);
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    margin: 8px;
+    text-indent: 20px;
+    padding: 6px;
+
+
+}
+  
+
+#botao{
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background-color: #f7ca00;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 9px;
+    border: 0;
+    padding: 10px;
+    box-shadow: 2px 3px 1px rgba(128, 128, 128, 0.353);
+
+}
+
+
+.senha{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+input{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(255, 252, 252);
+    color: black;
+    border-radius: 6px;
+    border-color: black;
+
+}
+
+
+
+#uso{
+    color: black;
+    position: relative;
+    top: 6px;
+    font-size: smaller;
+    text-align: center ;
+}
+
+span{
+    color: #0066c0;
+}
+
+
+#checkbox{
+    color: black;
+   
+}
+
+.manter {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 14px;
+    font-size: smaller;
+    color: #555555;
+}
+
+.manter span {
+    margin-right: 5px;
+    height: 25px;
+    color: black;
+}
+
+.divisor{
+   
+    width: 17em;
+    background-color: transparent;
+    display: block;
+    height: 1px;
+    border-top: 1px solid #c1bfbf;
+    position: absolute;
+    top: 480px;
+    margin-top: -1px;
+    z-index: 1;
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #fcfcfc;
+    margin-top: 100px;
+    border: 1px solid #c1bfbf;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#link{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: x-small;
+    gap: 30px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #0066c0;
+}
+
+#copy{
+    font-size: small;
+    text-align: center;
+    margin-top: 30px;
+    color: #555555;
+}
+
