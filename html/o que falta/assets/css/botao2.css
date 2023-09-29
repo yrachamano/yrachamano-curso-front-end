@@ -1,0 +1,8 @@
+#btn-2{
+
+    padding: 1em;
+    border: none;
+    background-color: var(--blue);
+    max-width: 10em;
+    border-radius: 5px;
+}

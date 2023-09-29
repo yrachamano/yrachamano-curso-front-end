@@ -1,0 +1,7 @@
+#btn-3{
+    padding: 1em;
+    border: none;
+    background-color: var(--green);
+    max-width: 15em;
+    border-radius: 40%;
+}

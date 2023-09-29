@@ -13,10 +13,8 @@ function options() {
     optionMenu.classList.toggle('active')
 }
 
-function volume(elemento) {
-    console.log(elemento.value)
-    audio.volume = elemento.value
-}
+
+
 
 botaoLogin.addEventListener('click', (event) => {
     event.preventDefault()
