@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/login.css">
-    <title>Login | Barbearia </title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <title>Cadastro | Barbearia </title>
 </head>
 <body>
     <header>
@@ -21,6 +21,10 @@
 
 <main>
     <form action="#" method="post" id="loguin">
+        
+        <div class="email">
+            <label for="email">E-mail:</label>
+            <input type="text" id="" name="">
         </div>
         <div class="loguin">
             <label for="login">Login:</label>
@@ -30,14 +34,20 @@
             <label for="senha">Senha:</label>
             <input type="password" id="" name="">
         </div>
-        <button> <a href="cadastro.html">cadastre-se</a></button>
-        <button>Login</button>
-    </main>
-    
-    
+        <div class="nascimento">
+            <label for="data_nascimento">Data de Nascimento</label>
+            <input type="date" name="" id="data_nascimento" required>
+        </div>
+        </form>
+
+        <button>entrar</button>
+        </main>
+            
     <footer>
         <img src="../../imagem/anonymos.jpg" alt="Logo da Barbearia ">
         <p>&copy; Desenvolvido no curso de HTML e CSS3 da <a href=""></a>, durante o programa Desenvolve 2023 do Grupo Boticário.</p>
       </footer>
+
+      <script src="loguin.js"></script>
 </body>
 </html>

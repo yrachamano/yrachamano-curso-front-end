@@ -82,3 +82,8 @@ label{
     color: var(--lightGrey);
     width: 30vw;
 }
+@media (min-width: 801px) {
+    #cadastrar input {
+        font-size: 1em;
+    }
+}
