@@ -30,7 +30,7 @@ header {
 }
 
 #logo {
-  height: 125%;
+  height: 100%;
   position: relative;
   top: 5px;
 }
@@ -136,7 +136,7 @@ footer p{
   font-size: 0.85em;
 }
 
-@media (max-width: 500px)  {
+@media (max-width: 784px)  {
   .utensilios{
     display: none;
   }
