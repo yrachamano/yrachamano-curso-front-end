@@ -1,7 +1,7 @@
 
 const usernameCadastro = document.querySelector("login")
 const senhaCadastro = document.querySelector("senha")
-const numeroCasa = document.querySelector("#numero_casa")
+
 const dataNascimento = document.querySelector("#data_nascimento")
 const email = document.querySelector("email")
 
