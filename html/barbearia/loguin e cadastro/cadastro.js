@@ -1,18 +1,14 @@
-
-const usernameCadastro = document.querySelector("login")
-const senhaCadastro = document.querySelector("senha")
-
+const usernameCadastro = document.querySelector("#login")
+const senhaCadastro = document.querySelector("#senha")
 const dataNascimento = document.querySelector("#data_nascimento")
-const email = document.querySelector("email")
+const email = document.querySelector("#email")
 
 
-
-
-const btnCadastro = document.querySelector("#enviar_cadastro")
+const btnCadastro = document.querySelector("#entrar")
 
 btnCadastro.addEventListener("click", (evento) => {
     evento.preventDefault()
-    if (logradouro.value == "" || usernameCadastro.value == "" || senhaCadastro.value == "" || numeroCasa.value == "" || dataNascimento.value == "" || email.value == "") {
+    if ( usernameCadastro.value == "" || senhaCadastro.value == "" || dataNascimento.value == "" || email.value == "") {
         alert("Existem campos há serem completados")
     } else {
 

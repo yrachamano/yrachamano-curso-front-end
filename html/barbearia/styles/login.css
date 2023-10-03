@@ -41,18 +41,7 @@ label{
     width: 2em;
 }
 
-#horaAtendimento{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 45px auto;
-    border: none;
-}#horaAtendimento select{
-    margin: 5px;
-    width: 200px;   height: 2em;
-    border: none;
-    border-radius: 5px;
-}
+
 .checkbox{
     width: 100%;
     font-size: 0.9em;

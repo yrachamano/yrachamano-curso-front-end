@@ -13,6 +13,7 @@ main{
   max-width: 940px;
   margin: auto;
 }
+  
 body{
   background-color: var(--lightGrey);
   min-height: 100vh;
