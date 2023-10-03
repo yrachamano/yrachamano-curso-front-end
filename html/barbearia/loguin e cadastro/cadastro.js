@@ -1,14 +1,32 @@
-const usernameCadastro = document.querySelector("#login")
-const senhaCadastro = document.querySelector("#senha")
+const cep = document.querySelector("#CEP")
+const logradouro = document.querySelector("#logradouro")
+const usernameCadastro = document.querySelector("#username-cadastro")
+const senhaCadastro = document.querySelector("#passwordCadastro")
+const numeroCasa = document.querySelector("#numero_casa")
 const dataNascimento = document.querySelector("#data_nascimento")
 const email = document.querySelector("#email")
 
 
-const btnCadastro = document.querySelector("#entrar")
+cep.addEventListener("blur", () => {
+    let procura = cep.value
+    procura = procura.replace("-","")
+
+    if(procura.length != 8) {
+        console.log(procura)
+    } else {
+        fetch(`https://viacep.com.br/ws/${procura}/json/`)
+        .then(response => response.json())
+        .then(data => {
+            logradouro.value = data.logradouro
+        })
+    }
+})
+
+const btnCadastro = document.querySelector("#enviar_cadastro")
 
 btnCadastro.addEventListener("click", (evento) => {
     evento.preventDefault()
-    if ( usernameCadastro.value == "" || senhaCadastro.value == "" || dataNascimento.value == "" || email.value == "") {
+    if (logradouro.value == "" || usernameCadastro.value == "" || senhaCadastro.value == "" || numeroCasa.value == "" || dataNascimento.value == "" || email.value == "") {
         alert("Existem campos há serem completados")
     } else {
 
@@ -23,6 +41,7 @@ btnCadastro.addEventListener("click", (evento) => {
                     nome: usernameCadastro.value,
                     senha: senhaCadastro.value,
                     dataDeNascimento: dataNascimento.value,
+                    endereco: `${logradouro.value} numero ${numeroCasa.value}`,
                     comentarios:''
                 }
             logins[logins.length] = login
