@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="shortcut icon" href="../../imagem/anonymos.jpg" type="image/x-icon" >
   <title>Barbearia </title>
+  
+   <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -74,36 +79,209 @@
       </section>
     </section>
 
-  </main>
-<label for="titulo-comentario2">Titulo do seu comentario</label>
-  <input type="text" name="titulo-comentario2" id="titulo-comentario2" maxlength="25" required>
-</div>
-<div class="textarea-comentario">
-  <label for="body-comentario2">Comentario</label>
-  <textarea name="body-comentario2" id="body-comentario2" cols="30" rows="5" maxlength="300" required></textarea>
-</div>
-<button class="modal-comentar-button">Fazer comentario</button>
-</form>
-</div>
-</div>
-</main>
-</article>
-<article class="contedor" id="cortes-estilosos">
-<div class="contedor-background blur"></div>
-
-<button class="comentar-button">Comentar</button>
-<main>
-
-  <footer>
-    <img src="" alt="Logo da Barbearia ">
-    <p>&copy; Desenvolvido no curso de HTML e CSS3  <a hrefht=""></a> .</p>
-  </footer>
-
-
-
-
-
+    <main>
+      <section id="section-1">
+        <div id="carousel-main" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel-main" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <picture  class="d-block w-100" alt="corte">
+                  <source class="w-100" media="(max-width: 800px)" srcset="imagens/corteMb.jpg" />
+                  <img class="w-100" src="../../imagem/anonymos.jpg" alt="corte">
+                </picture>
+                <div class="carousel-caption d-md-block left-carousel">
+                  <h2>Corte + Barba <br> = <br> Desconto Duplo!</h2>
+                  <p>Combine um corte de cabelo com um tratamento de barba e economize ainda mais! Nossos pacotes promocionais são feitos sob medida para você.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <picture  class="d-block w-100" alt="cadeira">
+                  <source class="w-100" media="(max-width: 800px)" srcset="imagens/cadeiraMb.jpg" />
+                  <img class="w-100" src="imagens/cadeira.jpg" alt="cadeira">
+                </picture>
+                <div class="carousel-caption d-md-block right-carousel">
+                  <h2>Bem-Vindo à Casa da Elegância Masculina</h2>
+                  <p>Na nossa barbearia, oferecemos serviços de corte de cabelo e tratamentos de barba excepcionais, realçando sua individualidade.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <picture  class="d-block w-100" alt="pente">
+                  <source class="w-100" media="(max-width: 800px)" srcset="imagens/penteMb.jpg" />
+                  <img class="w-100" src="imagens/pente.jpg" alt="pente">
+                </picture>
+                <div class="carousel-caption d-md-block left-carousel">
+                  <h2>Profissionalismo, Organização e Limpeza em Primeiro Lugar</h2>
+                  <p>Na nossa barbearia, o profissionalismo e a limpeza são nossa prioridade máxima, proporcionando uma experiência excepcional aos nossos clientes.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <picture  class="d-block w-100" alt="cerveja">
+                  <source class="w-100" media="(max-width: 800px)" srcset="imagens/cervejaMb.jpg" />
+                  <img class="w-100" src="imagens/cerveja.jpg" alt="cerveja">
+                </picture>
+                <div class="carousel-caption d-md-block right-carousel">
+                  <h2>Happy Hour!!</h2>
+                  <p>Junte-se a nós durante o nosso Happy Hour da Barbearia! Desfrute de preços reduzidos em cortes de cabelo e bebidas refrescantes.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
   
+          <div id="promocionais">
+            <article>
+              <div class="background-promocionais" id="recompensas-exclusivas"></div>
+              <div class="front-promocionais">
+                <span class="title">Recompensas Exclusivas</span>
+                <p>
+                  Junte-se ao nosso Programa de Fidelidade VIP e seja recompensado a cada visita.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="background-promocionais" id="indique-amigo"></div>
+              <div class="front-promocionais">
+                <span class="title">Indique um Amigo</span>
+                <p>
+                  Compartilhe e ganhe recompensas! Indique um amigo e ambos receberão descontos especiais em seus serviços.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="background-promocionais" id="dia-especial"></div>
+              <div class="front-promocionais" >
+                <span class="title">Dia Especial</span>
+                <p>
+                  Como parte do nosso Programa de Fidelidade, oferecemos um tratamento especial em seu dia especial.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
 
+
+  <section id="section-2">
+    <header>
+      <span class="section-comment-header active">Cuidados com a barba</span>
+      <span class="section-comment-header">Alopecia Androgenética</span>
+      <span class="section-comment-header">Cuidados com a barba</span>
+    </header>
+    <article class="contedor active" id="cuidados-barba">
+      <div class="contedor-background blur"></div>
+      
+      <button class="comentar-button">Comentar</button>
+      <main>
+        <aside>
+          <p>
+            Neste artigo, você encontrará dicas e truques exclusivos para um barbear suave e preciso, tudo no conforto da sua casa. Não perca a oportunidade de elevar o seu jogo de cuidados com a barba.
+          </p>
+          <span><a href="https://mmano.com.br/w/barba-bem-feita?utm_source=google&utm_medium=cpc&utm_campaign=barba&utm_content=sea-mam_barba_bemfeita&utm_term=azcfzn0100101expandld122802rx15030203010103034020113001718&gclid=CjwKCAjw3oqoBhAjEiwA_UaLtka2R_rIbHjN3tkQceKmXReTNQrlYyYofu29xctOZ1lblATqGg_2qxoCxJQQAvD_BwE" target="_blank">Leia o artigo <span class="material-symbols-sharp">arrow_forward_ios</span></a></span>
+        </aside>
+        <div class="secao-comentarios">
+          <div class="modal-comentar comentario">
+            <div>
+              <span class="material-symbols-sharp cancel-comment">cancel</span>
+            </div>
+            <form>
+              <div>
+                <label for="titulo-comentario1">Titulo do seu comentario</label>
+                <input type="text" name="titulo-comentario1" id="titulo-comentario1" maxlength="25" required>
+              </div>
+              <div class="textarea-comentario">
+                <label for="body-comentario1">Comentario</label>
+                <textarea name="body-comentario1" id="body-comentario1" cols="30" rows="5" maxlength="300" required></textarea>
+              </div>
+              <button class="modal-comentar-button">Fazer comentario</button>
+            </form>
+          </div>
+          
+          
+        </div>
+      </main>
+    </article>
+    <article class="contedor" id="calvice">
+      <div class="contedor-background blur"></div>
+      
+      <button class="comentar-button">Comentar</button>
+      <main>
+        <aside>
+          <p>
+            Neste artigo, você encontrará dicas e truques exclusivos para um barbear suave e preciso, tudo no conforto da sua casa. Não perca a oportunidade de elevar o seu jogo de cuidados com a barba.
+          </p>
+          <span><a href="https://mmano.com.br/w/barba-bem-feita?utm_source=google&utm_medium=cpc&utm_campaign=barba&utm_content=sea-mam_barba_bemfeita&utm_term=azcfzn0100101expandld122802rx15030203010103034020113001718&gclid=CjwKCAjw3oqoBhAjEiwA_UaLtka2R_rIbHjN3tkQceKmXReTNQrlYyYofu29xctOZ1lblATqGg_2qxoCxJQQAvD_BwE" target="_blank">Leia o artigo <span class="material-symbols-sharp">arrow_forward_ios</span></a></span>
+        </aside>
+        <div class="secao-comentarios">
+          
+          <div class="modal-comentar comentario">
+            <div>
+              <span class="material-symbols-sharp cancel-comment">cancel</span>
+            </div>
+            <form>
+              <div>
+                <label for="titulo-comentario2">Titulo do seu comentario</label>
+                <input type="text" name="titulo-comentario2" id="titulo-comentario2" maxlength="25" required>
+              </div>
+              <div class="textarea-comentario">
+                <label for="body-comentario2">Comentario</label>
+                <textarea name="body-comentario2" id="body-comentario2" cols="30" rows="5" maxlength="300" required></textarea>
+              </div>
+              <button class="modal-comentar-button">Fazer comentario</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </article>
+    <article class="contedor" id="cortes-estilosos">
+      <div class="contedor-background blur"></div>
+      
+      <button class="comentar-button">Comentar</button>
+      <main>
+        <aside>
+          <p>
+            Neste artigo, você encontrará dicas e truques exclusivos para um barbear suave e preciso, tudo no conforto da sua casa. Não perca a oportunidade de elevar o seu jogo de cuidados com a barba.
+          </p>
+          <span><a href="https://mmano.com.br/w/barba-bem-feita?utm_source=google&utm_medium=cpc&utm_campaign=barba&utm_content=sea-mam_barba_bemfeita&utm_term=azcfzn0100101expandld122802rx15030203010103034020113001718&gclid=CjwKCAjw3oqoBhAjEiwA_UaLtka2R_rIbHjN3tkQceKmXReTNQrlYyYofu29xctOZ1lblATqGg_2qxoCxJQQAvD_BwE" target="_blank">Leia o artigo <span class="material-symbols-sharp">arrow_forward_ios</span></a></span>
+        </aside>
+        <div class="secao-comentarios">
+          
+          <div class="modal-comentar comentario">
+            <div>
+              <span class="material-symbols-sharp cancel-comment">cancel</span>
+            </div>
+            <form>
+              <div>
+                <label for="titulo-comentario3">Titulo do seu comentario</label>
+                <input type="text" name="titulo-comentario3" id="titulo-comentario3" maxlength="25" required>
+              </div>
+              <div class="textarea-comentario">
+                <label for="body-comentario3">Comentario</label>
+                <textarea name="body-comentario3" id="body-comentario3" cols="30" rows="5" maxlength="300" required></textarea>
+              </div>
+              <button class="modal-comentar-button">Fazer comentario</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </article>
+  </section>
+  
+  
+    <footer>
+      <img src="" alt="Logo da Barbearia ">
+      <p>&copy; Desenvolvido no curso de HTML e CSS3  <a hrefht=""></a> .</p>
+    </footer>
+  
 </body>
 </html>

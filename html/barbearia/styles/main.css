@@ -182,6 +182,184 @@ footer p{
       color: #fff;
   }
 
+  #section-1 {
+    width: 100vw;
+    background-color: #a09797;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#logo-insection {
+  height: 200px;
+  transition: height .05s;
+}
+#logo-insection-parent {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carousel-main {
+  height: 90vh;
+  max-height: 766px;
+  width: 100vw;
+  max-width: 1366px;
+}
+.carousel-inner {
+  max-height: 766px;
+  max-width: 1366px;
+  overflow: hidden;
+}
+.carousel-item {
+  overflow: hidden;
+  max-height: 766px;
+}
+.carousel-inner .active img {
+  height: 90vh;
+  max-height: 766px;
+  position: relative;
+  max-width: 1366px;
+  object-fit: cover;
+  min-height: 500px;
+}
+
+.left-carousel > p,.right-carousel > p {
+  font-style: italic;
+}
+
+#arrowDown {
+  cursor: pointer;
+}
+
+#promocionais {
+  display: flex;
+  color: rgb(177, 177, 177);
+  gap: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  padding: 80px 100px;
+  max-width: 1980px;
+  height: fit-content;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+}
+#promocionais > article {
+  background-color: #000;
+  width: 220px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 2px solid rgb(177, 177, 177);
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+#promocionais .title {
+  font-size: 1.8em;
+  z-index: 2;
+}
+
+#promocionais > article > .front-promocionais > p {
+  position: absolute;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  max-width: 200px;
+}
+#promocionais > article:hover .front-promocionais, #promocionais > article.active .front-promocionais {
+  background-color: #ffffff8a!important;
+  color: #000;
+  border: 0!important;
+  transition: color 1s;
+}
+#promocionais > article:hover  p, #promocionais > article.active  p {
+  opacity: 1!important;
+  position: relative!important;
+  transition: opacity 1s;
+}
+.front-promocionais {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 20px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: default;
+}
+.background-promocionais {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  z-index:0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-position: center center;
+  filter: brightness(.5) grayscale(1);
+}
+#promocionais> article:hover > .background-promocionais, article.active > .background-promocionais {
+  display: block!important;
+}
+#dia-especial {
+  background-image: url();
+}
+#indique-amigo {
+  background-image: url(#);
+}
+#recompensas-exclusivas {
+  background-image: url(#);
+}
+
+  #section-2 {
+    position: relative;
+  }
+  .comentar-button {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    transition: background-color .5s, color .5s;
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+  }
+  .secao-comentarios {
+    display: flex;
+    margin: 2.5em 0 0 0;
+    width: 60%;
+    max-width: 1200px;
+    height: 350px;
+    gap: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    scroll-behavior: smooth;
+    z-index: 2;
+    flex-direction: row;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+
 @media (max-width: 784px)  {
   .utensilios{
     display: none;
