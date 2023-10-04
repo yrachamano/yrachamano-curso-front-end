@@ -37,7 +37,7 @@ header{
 }
 
 nav {
-  width: 300px;
+  width: 600px;
   display: flex;
   align-items: center;
 }
@@ -182,13 +182,34 @@ footer p{
       color: #fff;
   }
 
- 
-
-
-
- .left-carousel > p,.right-carousel > p {
-  font-style: italic;
+  #carousel-main {
+    height: 90vh;
+    max-height: 766px;
+    width: 67vw;
+    max-width: 1366px;
 }
+.carousel-inner {
+    max-height: 766px;
+    max-width: 1366px;
+    overflow: hidden;
+}
+.carousel-item {
+    overflow: hidden;
+    max-height: 766px;
+}
+.carousel-inner .active img {
+    height: 90vh;
+    max-height: 766px;
+    position: relative;
+    max-width: 1366px;
+    object-fit: cover;
+    min-height: 500px;
+}
+
+.left-carousel > p,.right-carousel > p {
+    font-style: italic;
+} 
+
 
 #arrowDown {
   cursor: pointer;
@@ -281,6 +302,19 @@ footer p{
   #section-2 {
     position: relative;
   }
+  
+  #cuidados-barba > .contedor-background {
+    background-image: url(../../../imagem/);
+}
+#calvice > .contedor-background {
+    background-image: url(imagens/pexels-rafael-barros-1819482.jpg);
+}
+#cortes-estilosos > .contedor-background {
+    background-image: url(imagens/cortes-estiloso.jpg);
+}  
+    
+
+
   .comentar-button {
     margin-top: 30px;
     padding: 10px;
