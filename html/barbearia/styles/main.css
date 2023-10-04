@@ -20,7 +20,7 @@ body{
   display: flex;
   flex-direction: column;
 }
-header {
+header{
   height: 100px;
   width: 100%;
   position: sticky;
@@ -182,50 +182,11 @@ footer p{
       color: #fff;
   }
 
-  #section-1 {
-    width: 100vw;
-    background-color: #a09797;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#logo-insection {
-  height: 200px;
-  transition: height .05s;
-}
-#logo-insection-parent {
-  height: 200px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+ 
 
-#carousel-main {
-  height: 90vh;
-  max-height: 766px;
-  width: 100vw;
-  max-width: 1366px;
-}
-.carousel-inner {
-  max-height: 766px;
-  max-width: 1366px;
-  overflow: hidden;
-}
-.carousel-item {
-  overflow: hidden;
-  max-height: 766px;
-}
-.carousel-inner .active img {
-  height: 90vh;
-  max-height: 766px;
-  position: relative;
-  max-width: 1366px;
-  object-fit: cover;
-  min-height: 500px;
-}
 
-.left-carousel > p,.right-carousel > p {
+
+ .left-carousel > p,.right-carousel > p {
   font-style: italic;
 }
 
@@ -236,18 +197,14 @@ footer p{
 #promocionais {
   display: flex;
   color: rgb(177, 177, 177);
-  gap: 10px;
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
-  padding: 80px 100px;
+  width: 10vw;
+  gap: 128px;
   max-width: 1980px;
   height: fit-content;
-  flex-wrap: wrap;
-  width: -moz-fit-content;
+  
 }
 #promocionais > article {
-  background-color: #000;
+  background-color: #ff5d5d;
   width: 220px;
   height: 320px;
   display: flex;
@@ -276,7 +233,7 @@ footer p{
 }
 #promocionais > article:hover .front-promocionais, #promocionais > article.active .front-promocionais {
   background-color: #ffffff8a!important;
-  color: #000;
+  color: #000000;
   border: 0!important;
   transition: color 1s;
 }
@@ -312,14 +269,14 @@ footer p{
   display: block!important;
 }
 #dia-especial {
-  background-image: url();
+  background-image: url(../../../imagem/jujutsu.jpg);
 }
 #indique-amigo {
   background-image: url(#);
 }
 #recompensas-exclusivas {
   background-image: url(#);
-}
+} 
 
   #section-2 {
     position: relative;
@@ -333,7 +290,7 @@ footer p{
     transition: background-color .5s, color .5s;
     &:hover {
         background-color: #fff;
-        color: #000;
+        color: #000000;
     }
   }
   .secao-comentarios {
@@ -360,7 +317,7 @@ footer p{
 }
 
 
-@media (max-width: 784px)  {
+@media (max-width: 1040px)  {
   .utensilios{
     display: none;
   }
