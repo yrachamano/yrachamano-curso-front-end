@@ -292,3 +292,59 @@ if (!localStorage.getItem("section-1")) {
       if (contedores[0].classList.contains("active")) {contedores[0].classList.remove("active")}
     }
   }
+
+  //promocoes
+  const promocionais = document.getElementById('promocionais')
+const promocionaisCards = [...promocionais.querySelectorAll('article')]
+let continuaCarouselCards = true
+let indexCardsPromocionais = 0
+rodaPromocionais()
+
+promocionaisCards.forEach((element, index) => {
+  const elementFilho = element.querySelector('.front-promocionais')
+  const elementNeto = [...elementFilho.children]
+  console.log(elementFilho)
+  element.addEventListener('mouseenter', () => {
+    indexCardsPromocionais = index;
+    continuaCarouselCards = false;
+    limpaPromocionais()
+  })
+
+
+
+  elementFilho.addEventListener('mouseenter', () => {
+    console.log('ayo')
+    continuaCarouselCards = false
+  })
+  elementNeto.forEach(neto => {
+    neto.addEventListener('mouseenter', ()=> {
+      continuaCarouselCards = false
+    })
+  })
+  elementFilho.addEventListener('mouseout', () => {
+    console.log('eita')
+    continuaCarouselCards = true;
+  })
+})
+
+function limpaPromocionais () {
+  promocionaisCards.forEach(element => {
+    if (element.classList.contains('active')) element.classList.remove('active');
+  })
+}
+
+function rodaPromocionais () {
+  if (continuaCarouselCards) {
+      limpaPromocionais();
+      promocionaisCards[indexCardsPromocionais].classList.add('active');
+  }
+}
+
+setInterval(() => {
+  if(continuaCarouselCards) {
+    (indexCardsPromocionais == promocionaisCards.length - 1) ? indexCardsPromocionais = 0 : indexCardsPromocionais++;
+    rodaPromocionais() 
+  }
+}, 5000);
+
+

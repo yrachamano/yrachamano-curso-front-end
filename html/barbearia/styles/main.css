@@ -20,7 +20,7 @@ body{
   display: flex;
   flex-direction: column;
 }
-header{
+#cima{
   height: 100px;
   width: 100%;
   position: sticky;
@@ -171,7 +171,45 @@ footer p{
   border: 2px solid rgb(177, 177, 177);
   padding: 10px;
   position: relative;
+  & > p {
+    margin-left: 20px;
+    text-align: left;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    height: 80%;
 }
+& > p::-webkit-scrollbar {
+    display: none;
+}
+& > small {
+    width: 100%;
+    text-align: right;
+    color: #ccc;
+    font-size: 1em;
+    margin-right: 20px;
+    text-transform: capitalize;
+
+    & > img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 5px;
+    }
+}
+& > span {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+& > span.titulo {
+    position: relative;
+    cursor: default;
+}
+}
+
   & > .titulo {
       font-size: 1.3em;
       font-weight: bolder;
@@ -327,29 +365,129 @@ footer p{
         color: #000000;
     }
   }
-  .secao-comentarios {
-    display: flex;
-    margin: 2.5em 0 0 0;
-    width: 60%;
-    max-width: 1200px;
-    height: 350px;
-    gap: 30px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    scroll-behavior: smooth;
-    z-index: 2;
-    flex-direction: row;
-    &::-webkit-scrollbar {
-        display: none;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        display: none;
-    }
+  
+.contedor {
+  & main {
+      gap: 10px;
+  }
+  & aside {
+      height: 100%;
+      font-size: .8em!important;
+      width: 180px!important;
+      padding:5px!important;
+      
+      & > p {
+          margin-top: 50px;
+      }
+  }
 }
 
+.comentario {
+  height: 250px!important;
+  width: 200px!important;
+
+  & > p {
+      font-size: .8em;
+  }
+
+  & > span.titulo {
+      display: flex;
+      width: 200px;
+      font-size: 1em;
+      overflow: hidden;
+  }
+}
+
+.secao-comentarios {
+  height: 300px;
+}
+#section-2 > header {
+
+  & > span {
+      font-size: .8em!important;
+      text-align: center;
+  }   
+  
+
+  & > .active:hover {
+      color: #ffdd78;
+  }
+}
+#section-2 > header > span.active {
+  font-size: 1.3em!important;
+}
+
+& > article {
+  display: none;
+}
+
+& > article.active {
+  display: flex;
+}
+
+
+
+.modal-comentar {
+display: none;
+justify-content: center;
+align-items: center;
+position: relative;
+flex-direction: column;
+
+& > div {
+  font-size: 1.5em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  & > span {
+      cursor: pointer;
+  }
+}
+
+& > form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  & > div > label {
+      text-align: center;
+      font-size: .8em;
+  }
+  & > .textarea-comentario {
+      height: 100%;
+  }
+  & > button {
+      border: 0;
+      margin-top: 15px;
+      padding: 2.5px 5px;
+  }
+}
+
+& > form > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  & > input {
+      width: 80%;
+  }
+}
+
+& > form > div > textarea {
+  resize: none;
+  width: 80%;
+  height: 100%;
+}
+
+
+
+}
+.modal-comentar.active {
+display: flex;
+}
 
 @media (max-width: 1040px)  {
   .utensilios{
